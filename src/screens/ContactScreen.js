@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import {
-    Alert,
-    Linking,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  Alert,
+  Linking,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import colors from '../styles/colors';
 
@@ -43,7 +43,7 @@ export default function ContactScreen() {
       <View style={styles.contactInfoSection}>
         <TouchableOpacity 
           style={styles.contactItem}
-          onPress={() => Linking.openURL('mailto:info@devsaaspro.com')}
+          onPress={() => Linking.openURL('mailto:pixyn@gmail.com')}
         >
           <Text style={styles.contactIcon}>📧</Text>
           <View style={styles.contactDetails}>
