@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "platforms": ["ios", "android", "web"],
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/pixyn-logo.svg",
     "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
@@ -15,7 +15,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.devsaaspro.mobileapp"
+      "bundleIdentifier": "com.pixyn.mobileapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,9 +25,7 @@
       "package": "com.devsaaspro.mobileapp"
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro",
-      "output": "static"
+      "bundler": "metro"
     }
   }
 }
