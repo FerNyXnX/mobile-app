@@ -1,50 +1,205 @@
-# Welcome to your Expo app 👋
+# 🚀 DevSaasPro - Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicación móvil multiplataforma desarrollada con React Native y Expo para DevSaasPro, una empresa de desarrollo de software.
 
-## Get started
+## 📋 Características
 
-1. Install dependencies
+- ✅ Navegación con tabs (Home, Servicios, Precios, Contacto)
+- ✅ Gestión de estado con Redux Toolkit
+- ✅ Diseño moderno con gradientes y animaciones
+- ✅ Completamente responsive
+- ✅ Compatible con iOS, Android y Web
+- ✅ Componentes reutilizables
+- ✅ Arquitectura escalable
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Tecnologías
 
-2. Start the app
+- **React Native** 0.81.5
+- **Expo** ~54.0
+- **React Navigation** 7.x
+- **Redux Toolkit** 2.9.2
+- **Expo Linear Gradient**
+- **React Native Gesture Handler**
+- **React Native Reanimated**
 
-   ```bash
-   npx expo start
-   ```
+## 📦 Instalación
 
-In the output, you'll find options to open the app in a
+### Prerrequisitos
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Node.js 18+
+- npm o yarn
+- Expo CLI
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### Pasos
 ```bash
-npm run reset-project
+# Clonar el repositorio
+git clone <repository-url>
+
+# Navegar a la carpeta
+cd mobile-app
+
+# Instalar dependencias
+npm install
+
+# Iniciar el proyecto
+npm start
+
+# O con Expo CLI
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🚀 Scripts Disponibles
+```bash
+# Iniciar desarrollo
+npm start
 
-## Learn more
+# Abrir en Android
+npm run android
 
-To learn more about developing your project with Expo, look at the following resources:
+# Abrir en iOS
+npm run ios
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Abrir en web
+npm run web
+```
 
-## Join the community
+## 📂 Estructura del Proyecto
+```
+mobile-app/
+├── App.js                    # Punto de entrada
+├── app.json                  # Configuración de Expo
+├── package.json              # Dependencias
+├── assets/                   # Imágenes e iconos
+└── src/
+    ├── components/           # Componentes reutilizables
+    │   ├── common/          # Button, Card, Input
+    │   └── layout/          # Header, Footer
+    ├── navigation/          # Configuración de navegación
+    │   └── AppNavigator.js
+    ├── redux/               # Estado global
+    │   ├── store.js
+    │   └── slices/
+    │       ├── uiSlice.js
+    │       └── userSlice.js
+    ├── screens/             # Pantallas principales
+    │   ├── HomeScreen.js
+    │   ├── ServicesScreen.js
+    │   ├── PricingScreen.js
+    │   └── ContactScreen.js
+    ├── styles/              # Estilos globales
+    │   ├── colors.js
+    │   └── theme.js
+    └── utils/               # Utilidades
+        └── constants.js
+```
 
-Join our community of developers creating universal apps.
+## 🎨 Paleta de Colores
+```javascript
+Primary: #667eea      // Azul
+Secondary: #764ba2    // Púrpura
+Accent: #f093fb       // Rosa
+Success: #4caf50      // Verde
+Warning: #fbbf24      // Amarillo
+Error: #ef4444        // Rojo
+Background: #0a0e27   // Azul oscuro
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📱 Pantallas
+
+### 1. Home
+- Hero section con gradiente
+- Estadísticas (100+ Proyectos, 50+ Clientes, 99% Satisfacción)
+- Features cards
+- Call to action
+
+### 2. Servicios
+- Lista de servicios ofrecidos
+- Desarrollo Web
+- Apps Móviles
+- Cloud & Backend
+- Diseño UI/UX
+- Consultoría Tech
+- Seguridad
+
+### 3. Precios
+- 3 planes (Basic, Professional, Enterprise)
+- Comparación de características
+- Garantía de satisfacción
+
+### 4. Contacto
+- Formulario de contacto
+- Información de contacto
+- Integración con email, teléfono y WhatsApp
+- Horarios de atención
+
+## 🔧 Configuración
+
+### Redux Store
+
+El store de Redux está configurado con dos slices principales:
+
+- **uiSlice**: Manejo del estado de la UI (dark mode, loading, etc.)
+- **userSlice**: Gestión de autenticación y datos del usuario
+
+### Navegación
+
+Se utiliza React Navigation con:
+- Bottom Tab Navigator para las 4 pantallas principales
+- Stack Navigator como contenedor principal
+
+## 🚀 Deploy
+
+### Web (Netlify)
+```bash
+# Build para producción
+npx expo export:web
+
+# El output estará en web-build/
+# Sube esta carpeta a Netlify
+```
+
+### Android
+```bash
+# Build APK
+eas build --platform android
+
+# O si usas Expo Go
+npx expo build:android
+```
+
+### iOS
+```bash
+# Build IPA
+eas build --platform ios
+
+# O si usas Expo Go
+npx expo build:ios
+```
+
+## 🤝 Contribuir
+
+1. Fork el proyecto
+2. Crea una rama (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'feat: add amazing feature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto es propiedad de DevSaasPro.
+
+## 👥 Autores
+
+- **DevSaasPro Team**
+
+## 📞 Contacto
+
+- Email: info@devsaaspro.com
+- Website: https://devsaaspro.com
+- WhatsApp: +52 123 456 7890
+
+## 🙏 Agradecimientos
+
+- React Native Community
+- Expo Team
+- React Navigation Team
