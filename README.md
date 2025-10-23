@@ -194,8 +194,8 @@ Este proyecto es propiedad de DevSaasPro.
 
 ## 📞 Contacto
 
-- Email: info@devsaaspro.com
-- Website: https://devsaaspro.com
+- Email: pixynstudio@gmail.com
+- Website: https://pixynstudio.com
 - WhatsApp: +52 123 456 7890
 
 ## 🙏 Agradecimientos
